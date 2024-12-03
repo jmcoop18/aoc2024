@@ -3,6 +3,7 @@ def mult(string):
     t = 0
     for i in expressions[1:]:
         try:
+            # evlauate if there are no extra characters & there are multiple numbers
             if (i[0][-1].isnumeric()) and (i[0].count(',') != 0):
                 t += eval(i[0].replace(',', '*'))
         except:
